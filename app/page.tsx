@@ -7,7 +7,7 @@ import { UpNextTile } from "@/components/dashboard/UpNextTile";
 import { CoursesSection } from "@/components/dashboard/CoursesSection";
 import { CourseSkeleton } from "@/components/dashboard/Skeletons";
 
-export const dynamic = "force-dynamic";
+
 
 export default function Page() {
   return (
@@ -18,7 +18,6 @@ export default function Page() {
           <HeroTile name="Alex" streak={12} />
           <StreakTile />
           <Suspense fallback={<CourseSkeleton />}>
-            {/* @ts-expect-error Async Server Component */}
             <CoursesSection />
           </Suspense>
           <ActivityTile />

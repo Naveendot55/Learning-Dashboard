@@ -17,7 +17,7 @@ export function HeroTile({ name, streak }: { name: string; streak: number }) {
             Hey, {name} <span className="text-white/40">— ready to ship?</span>
           </h1>
           <p className="mt-3 max-w-xl text-sm md:text-base text-white/60">
-            You're 3 lessons away from completing this week's track. Keep the momentum.
+            You&apos;re 3 lessons away from completing this week&apos;s track. Keep the momentum.
           </p>
         </div>
 
